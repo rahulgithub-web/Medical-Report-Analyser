@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI('AIzaSyDqcwMUlLPTYBRdyD8u8yGh-zsAXjiv7ZI');
+const genAI = new GoogleGenerativeAI(process.env.API_KEY!);
 
 export async function analyzeReport(fileContent: string) {
   try {
